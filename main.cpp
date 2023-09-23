@@ -4,21 +4,21 @@ constexpr int N_ELEMENTS = 100;
 
 int main()
 {
-    int *b = new int[NELEMENTS];
-    std::cout << '1-100 ertekek duplazasa'
-    for (int i = 0;)
+    int *b = new int[NELEMENTS]; // hiányzó karakter az elemszámnál
+    std::cout << '1-100 ertekek duplazasa' // nincs lezárva a kiiratás
+    for (int i = 0;) // hiányos ciklusmag
     {
         b[i] = i * 2;
     }
     for (int i = 0; i; i++)
     {
-        std::cout << "Ertek:"
+        std::cout << "Ertek:" // nincs lezárva a kiiratás
     }    
     std::cout << "Atlag szamitasa: " << std::endl;
     int atlag;
-    for (int i = 0; i < N_ELEMENTS, i++)
+    for (int i = 0; i < N_ELEMENTS, i++) //a második vessző nem pontos
     {
-        atlag += b[i]
+        atlag += b[i] //hiányzó pontosvessző
     }
     atlag /= N_ELEMENTS;
     std::cout << "Atlag: " << atlag << std::endl;
